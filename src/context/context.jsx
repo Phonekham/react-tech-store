@@ -15,7 +15,7 @@ class ProductProvider extends Component {
     cartItems: 0,
     cartSubTotal: 0,
     cartTax: 0,
-    cartToal: 0,
+    cartTotal: 0,
     storeProducts: [],
     filteredProducts: [],
     featuredProducts: [],
@@ -94,7 +94,7 @@ class ProductProvider extends Component {
       cartItems: totals.cartItems,
       cartSubTotal: totals.subTotal,
       cartTax: totals.tax,
-      cartToal: totals.total
+      cartTotal: totals.total
     });
   };
   // sync storage

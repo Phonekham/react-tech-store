@@ -187,6 +187,18 @@ class ProductProvider extends Component {
     );
   };
 
+  clearCart = () => {
+    this.setState(
+      {
+        cart: []
+      },
+      () => {
+        this.addTotals();
+        this.syncStorage();
+      }
+    );
+  };
+
   render() {
     return (
       <ProductContext.Provider

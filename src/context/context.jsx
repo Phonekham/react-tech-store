@@ -153,7 +153,7 @@ class ProductProvider extends Component {
     this.setState({ cartOpen: true });
   };
 
-  incremant = id => {
+  increment = id => {
     console.log(id);
   };
   decrement = id => {
@@ -171,8 +171,8 @@ class ProductProvider extends Component {
           openCart: this.openCart,
           addToCart: this.addToCart,
           setSingleProduct: this.setSingleProduct,
-          incremant: this.incremant,
-          decrement: this.decremant,
+          increment: this.increment,
+          decrement: this.decrement,
           removeItem: this.removeItem,
           clearCart: this.clearCart
         }}

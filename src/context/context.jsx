@@ -153,6 +153,13 @@ class ProductProvider extends Component {
     this.setState({ cartOpen: true });
   };
 
+  incremant = id => {
+    console.log(id);
+  };
+  decrement = id => {
+    console.log(id);
+  };
+
   render() {
     return (
       <ProductContext.Provider
@@ -163,7 +170,11 @@ class ProductProvider extends Component {
           closeCart: this.closeCart,
           openCart: this.openCart,
           addToCart: this.addToCart,
-          setSingleProduct: this.setSingleProduct
+          setSingleProduct: this.setSingleProduct,
+          incremant: this.incremant,
+          decrement: this.decremant,
+          removeItem: this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}
